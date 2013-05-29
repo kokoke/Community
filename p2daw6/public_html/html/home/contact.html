@@ -1,0 +1,48 @@
+<section class="service">
+    <div class="container">
+        <div class="tabService">
+            <header>
+                <h1 class="pageTitle">Sobre nosotros</h1>
+            </header>
+            <section id="infoAboutUs">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent eu justo elit, vitae sodales purus. Donec est arcu, fermentum a hendrerit quis, porttitor ac nisl. Suspendisse ultrices elementum leo, vel vulputate diam pharetra non. Fusce pharetra accumsan leo porttitor semper. Vivamus dignissim dictum sapien eget cursus. Suspendisse faucibus, urna vitae porttitor vestibulum, orci est interdum nunc, et lobortis orci diam vel eros. In ac nibh eget augue pulvinar condimentum non non massa. Aliquam aliquam nunc eget nunc gravida laoreet. Sed lacinia, risus nec placerat scelerisque, elit tellus egestas ante, vel facilisis nisi sem non ligula. Vivamus massa elit, ultricies ac interdum id, feugiat scelerisque risus. Sed bibendum volutpat commodo. Praesent ut tellus eget lectus commodo rutrum. Sed purus nibh, scelerisque ac tempor ac, sagittis nec ante.
+            </section>
+            <section id="formContact">
+                <header>
+                    <h4 style="width: 64%;">Formulario de contacto</h4>
+                </header>
+                <form action="send" method="POST" id="sendContact">
+                    <fieldset class="contactForm">
+                        <label>
+                            <span>Nombre:</span>
+                            <input type="text" id="contactName">
+                            <span class="errorField" id="errorName">Campo obligatorio</span>
+                        </label>
+                        <label>
+                            <span>Email:</span>
+                            <input type="email" id="contactEmail">
+                            <span class="errorField" id="errorEmailContact">Por favor, introduzca una dirección de correo electrónico válido.</span>
+                        </label>
+                        <label>
+                            <span>Mensaje:</span>
+                            <textarea id="contactMessage"></textarea>
+                            <span class="errorField" id="errorMessage">Campo obligatorio, entre 10 y 200 caracteres</span>
+                        </label>
+                        <input type="submit" value="Enviar" class="btn redBtn">
+                    </fieldset>
+                </form>
+            </section>
+            <section id="infoMap">
+                <header>
+                    <h4 style="width: 64%;">Ubicacion</h4>
+                </header>
+                <div class="map" id="mapGoogle"></div>
+                <address><p>
+                    <span><strong>Pais:</strong>España </span><br>
+                    <span><strong>Provincia:</strong>Barcelona </span><br>
+                    <span><strong>Direccion:</strong>Imaginaria 300 </span><br>
+                </p></address>
+            </section>
+        </div>
+    </div>
+</section>

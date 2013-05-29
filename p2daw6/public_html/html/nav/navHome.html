@@ -1,0 +1,51 @@
+<div id="headerTop">
+    <ul id="language">
+        <li>Idioma:</li>
+        <li class="idioma">Es</li>
+        <li class="idioma">En</li>
+        <li class="idioma">Ca</li>
+    </ul>
+    <div class="tooltip"></div>
+    <ul>
+        <li class="acceso">
+            <a>Acceso</a>
+        </li>
+        <li class="login">
+            <header>
+                Login
+                <div class="formError" >
+                    <div id="errorUser" class="errorField">Email o clave incorrecta, vuelva a intentarlo.<br></div>
+                </div>
+            </header>
+            <form id="formLogin" method="post">
+                <input type="text" id="inLogin" name="email" placeholder="community@gmil.com" class="loginEmail">
+                <div class="formError">
+                    <div id="errorEmail1" class="errorField">Campo requerido<br></div>
+                </div>
+                <div class="formError" >
+                    <div id="errorEmail2" class="errorField">Email requerido<br></div>
+                </div>
+                <input type="password" id="inPass" name="password" placeholder="Contraseña" class="loginPassword">
+                <span class="remPasswd">Has olvidado la contraseña?</span>
+                <div class="formError" >
+                    <div id="errorPass" class="errorField">Campo requerido <br></div>
+                </div>
+                <span class="newUser"><a {urlRegist}>Registrarse</a></span>
+                <input type="submit" name="submit" value="Entrar" class="blackBtn">
+            </form>
+        </li>
+    </ul>
+</div>
+<header>
+    <div style="display: inline-block;">
+        <a href="/p2daw6" >
+            <img class="logo" src="/p2daw6/public_html/img/logo.png">
+        </a>
+    </div>
+    <div style="float: right;">
+        <ul class="menuHome">
+            <li class="menu {activeIni}"><a {urlIni}>Inicio</a></li>
+            <li class="menu {activeWho}"><a {urlabout}>Quienes Somos</a></li>
+        </ul>
+    </div>
+</header>

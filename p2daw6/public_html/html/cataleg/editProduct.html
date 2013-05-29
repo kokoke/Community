@@ -1,0 +1,99 @@
+<a href="/p2daw6/cpanel/cataleg/products" class="buttonM GreenBtn positionGoBack">
+    <span class="goBack"></span>
+    <span>Volver</span>
+</a>
+<section id="editDetalls">
+    <div class="widget">
+        <form action="../saveEditProduct/{productEditToSave}" method="POST" enctype="multipart/form-data" id="formEditProduct" class="newProduct Edit">
+            <article id="infoEditProduct">
+                <label>
+                    <img src="{imgEditProduct}" class="imgGrande viewImage">
+                    <span class="falseUploadFile">Seleccionar imagen</span>
+                    <input type="file" class="uploadedfile" name="editImageProduct" data-preview="true" data-preview="true">
+                </label>
+                <label>
+                    <span class="subLabel">Nombre</span>
+                    <input type="text" {nameEditProduct} name="editNameProduct"><br>
+                </label>
+                <label>
+                    <input type="submit" class="btnGuardar" value="Guardar">
+                </label>
+                <label class="permitirCompra">
+                    <input type="checkbox" {editCheckProduct} name="editCheckProduct">
+                    <span>Permitir la compra</span>
+                </label>
+            </article>
+            <article id="detail1" class="detail">
+                <header>
+                    <span class="circulo">+</span>
+                    <span class="tituloSection">Informacion</span>
+                </header>
+                <fieldset>
+                    <label>
+                        <span class="subLabel">Categoria</span>
+                        <select  name="editCategoryProduct" data-placeholder="Categoria" class="chzn-select" style="width:350px;" tabindex="2">
+                              <option value=""></option>
+                              {listaProductEdit}
+                        </select>
+                    </label>
+                    <label>
+                        <span class="subLabel">Precio</span>
+                        <input type="text" {priceEditProduct} name="editPrecioProduct"/>
+                    </label>
+                    <label>
+                        <span class="subLabel">Referencia
+                            <span id="helpRef" class="help">?</span>
+                        </span>
+                        <input type="text" {refEditProduct} name="editRefProduct">
+                        <input type="hidden" {refEditProduct} name="hiddenRefProduct">
+                    </label>
+                </fieldset>
+            </article>
+            <article id="detail2" class="detail">
+                <header>
+                    <span class="circulo">+</span>
+                    <span class="tituloSection">Abastecimiento</span>
+                </header>
+                <fieldset>
+                    <label>
+                        <span class="subLabel">Precio Coste</span>
+                        <input type="text" {priceCostEditProduct} name="editPrecioCostProduct">
+                    </label>
+                    <label>
+                        <span class="subLabel">Plazo Entrega
+                            <span id="helpEnt" class="help">?</span>
+                        </span>
+                        <input type="number" {plazoEditProduct} name="editEntregaProduct">
+                    </label>
+                </fieldset>
+            </article>
+            <article id="detail3" class="detail">
+                <header>
+                    <span class="circulo">+</span>
+                    <span class="tituloSection">Inventario</span>
+                </header>
+                <fieldset>
+                    <label>
+                        <span class="subLabel">Stock</span>
+                        <input type="number" {stockEditProduct} name="editStockProduct">
+                    </label>
+                </fieldset>
+            </article>
+            <article id="detail5" class="detail">
+                <header>
+                    <span class="circulo">+</span>
+                    <span class="tituloSection">Contabilidad</span>
+                </header>
+                <fieldset>
+                    <label>
+                        <span class="subLabel">IVA</span>
+                        <select  name="editIvaProduct" data-placeholder="IVA" class="chzn-select" style="width:350px;" tabindex="2">
+                              <option value=""></option>
+                              {listaProductIva}
+                        </select>
+                    </label>
+                </fieldset>
+            </article>
+        </form>
+    </div>
+</section>

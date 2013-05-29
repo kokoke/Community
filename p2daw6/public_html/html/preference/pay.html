@@ -1,0 +1,33 @@
+  <section>
+    <fieldset>
+        <div id="">
+            <input type="text" class="send" id="send_trg" name="send_msj" placeholder="Nueva targeta de credito...">
+            <div class="send_btn">
+                <a type="submit" id="sendTarget" name="sendMessage" class="sendBtn"> Nuevo</a>
+            </div>
+            <div class="widget">
+                <div class="whead">
+                    <h6>Tragetas de creditos: </h6>
+                </div>
+                <fieldset id="tableTarget">
+                    <table id="tableProducts" cellpadding="0" cellspacing="0" border="0" class="dTable dataTable" >
+                        <thead>
+                            <tr role="row">
+                                <th class="sorting_asc" style="text-align: left; width: 80%;">
+                                    Numero
+                                    <span class="sorting" style="display: block;"></span>
+                                </th>
+                                <th class="sorting" >
+                                    Accion
+                                </th>
+                            </tr>
+                        </thead>
+                        <tbody id="tableProducts" role="alert" aria-live="polite" aria-relevant="all">
+                                {listaTargetasCredito}
+                        </tbody>
+                    </table>
+                </fieldset>
+            </div>
+        </div>
+    </fieldset>
+</section>

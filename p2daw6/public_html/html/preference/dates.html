@@ -1,0 +1,107 @@
+<section id="addDetalls">
+    <form class="editPerfil" action="preference/saveDatesUser" method="POST" enctype="multipart/form-data">
+        <div class="widget">
+            <div class="whead">
+                <h6>Datos Usuario</h6>
+                <div class="secPreferenceSava">
+                    <input id="saveChangeUserData" type="submit" class="buttonM bRed" value="Guardar">
+                </div>
+            </div>
+            <section class="editProfileUser">
+                <label>
+                    <img src="{imagenEditAvatar}"  class="imgGrande viewImage">
+                    <span class="falseUploadFile">Seleccionar imagen</span>
+                    <input id="uploadImageAvatar" name="imagenEditAvatar" type="file" class="uploadedfile " data-preview="true">
+                </label>
+                <article id="datosUsuarios">
+                    <label>
+                        <span class="subLabel">Usuario</span>
+                        <input type="text" value="{editProfileUserName}" id="editProfileUserName" name="editProfileUserName">
+                    </label>
+                    <label>
+                        <span class="subLabel">Email</span>
+                        <input type="text" value="{editProfileEmail}" class="" id="editProfileEmail" name="editProfileEmail">
+                    </label>
+                    <label>
+                        <span class="subLabel">Contraseña</span>
+                        <input type="password" id="editProfilePassword" name="editProfilePassword">
+                    </label>
+                    <label>
+                        <span class="subLabel">Repetir contraseña</span>
+                        <input type="password" id="repeatEditProfilePassword">
+                    </label>
+                </article>
+            </section>
+        </div>
+    </form>
+    <form class="editPerfil" method="POST" enctype="multipart/form-data">
+        <div class="widget">
+            <div class="whead">
+                <h6>Datos Personales</h6>
+                <div class="secPreferenceSava">
+                    <a href="/p2daw6/cpanel/cataleg/add" class="buttonM bRed" id="">
+                        <span class="icon-add"></span>
+                        <span>Guardar</span>
+                    </a>
+                </div>
+            </div>
+            <section class="editProfile">
+                <article id="datosPersonales">
+                    <label>
+                        <span class="subLabel">Nombre</span>
+                        <input type="text" value="{editProfileNombre}" id="editProfileNombre">
+                    </label>
+                    <label>
+                        <span class="subLabel">Apellido</span>
+                        <input type="text" value="{editProfileApellido}" id="editProfileApellido" class="">
+                    </label>
+                    <label>
+                        <span class="subLabel">DNI</span>
+                        <input type="text" value="{editProfileDNI}" id="editProfileDNI">
+                    </label>
+                    <label>
+                        <span class="subLabel">Fecha nacimiento</span>
+                        <input type="date" value="{editProfilefecha}" id="editProfilefecha">
+                    </label>
+                    <label>
+                        <span class="subLabel">Telefono</span>
+                        <input type="text" value="{editProfileTelefono}" id="editProfileTelefono" class="">
+                    </label>
+                    <label>
+                        <span class="subLabel">Direccion</span>
+                        <input type="text" value="{editProfileAddress}" class="" id="editProfileAddress">
+                    </label>
+                </article>
+            </section>
+        </div>
+    </form>
+    <form class="editPerfil" method="POST" enctype="multipart/form-data">
+        <div class="widget">
+            <div class="whead">
+                <h6>Datos Empresa</h6>
+                <div class="secPreferenceSava">
+                    <a href="/p2daw6/cpanel/cataleg/add" class="buttonM bRed" id="">
+                        <span class="icon-add"></span>
+                        <span>Guardar</span>
+                    </a>
+                </div>
+            </div>
+            <section class="editProfile">
+                <article id="datosEmpresa">
+                    <label>
+                        <span class="subLabel">Denominacion</span>
+                        <input type="text" value="{editProfileDenominacion}" id="editProfileDenominacion">
+                    </label>
+                    <label>
+                        <span class="subLabel">CIF</span>
+                        <input type="text" value="{editProfileCIF}" id="editProfileCIF">
+                    </label>
+                    <label>
+                        <span class="subLabel">Web</span>
+                        <input type="url" value="{editProfileWeb}" id="editProfileWeb">
+                    </label>
+                </article>
+            </section>
+        </div>
+    </form>
+</section>

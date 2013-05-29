@@ -1,0 +1,41 @@
+<section id="secProductos">
+    <div class="secIcoNew">
+        <a href="/p2daw6/cpanel/cataleg/add" class="buttonM bRed" id="crear">
+            <span class="icon-add"></span>
+            <span>Crear</span>
+        </a>
+    </div>
+    <div class="widget">
+        <div class="whead">
+            <h6>Productos</h6>
+        </div>
+        <fieldset id="contentTable">
+            <table id="tableProducts" cellpadding="0" cellspacing="0" border="0" class="dTable dataTable" >
+                <thead>
+                    <tr role="row">
+                        <th class="sorting_asc">
+                            Referencia
+                            <span class="sorting" style="display: block;"></span>
+                        </th>
+                        <th class="sorting_asc">
+                            Nombre
+                            <span class="sorting" style="display: block;"></span>
+                        </th>
+                        <th class="sorting_desc" >
+                            Categoría
+                        </th>
+                        <th class="sorting" >
+                            Precio
+                        </th>
+                        <th class="sorting" >
+                            Accion
+                        </th>
+                    </tr>
+                </thead>
+                <tbody id="tableProducts" role="alert" aria-live="polite" aria-relevant="all">
+                    {listaDeProductos}
+                </tbody>
+            </table>
+        </fieldset>
+    </div>
+</section>

@@ -1,0 +1,95 @@
+<section class="registro">
+    <div class="container">
+        <div class="tabRegistro">
+             <header>
+                <h1 class="pageTitle">Registrarse</h1>
+            </header>
+            <ul class="listRegistro">
+                <li class="active" id="list1">
+                    Datos Usuario
+                    <div id="flecha1" class="flecha_derecha flechActive"></div>
+                </li>
+                <li id="list2">
+                    Datos Personales
+                    <div id="flecha2" class="flecha_derecha"></div>
+                </li>
+                <li id="list3">
+                    Datos Empresariales
+                </li>
+            </ul>
+            <form action="/p2daw6/newuser" method="post" class="registerForm">
+                <article id="inf1" class="info active">
+                    <label>
+                        <span class="subLabel">Usuario</span>
+                        <input type="text"  id="camporegistro1" name="camporegistro1">
+                    </label>
+                    <label>
+                        <span class="subLabel">Email</span>
+                        <input type="email" id="camporegistro2" name="camporegistro2">
+                    </label>
+                    <label>
+                        <span class="subLabel">Contrasñea</span>
+                        <input type="password" id="camporegistro3" name="camporegistro3">
+                    </label>
+                    <label>
+                        <span class="subLabel">Repetir Contraseña</span>
+                        <input type="password" id="camporegistro4" name="camporegistro4">
+                    </label>
+                </article>
+                <article id="inf2" class="info">
+                    <label>
+                        <span class="subLabel">Nombre</span>
+                        <input type="text" id="camporegistro5" name="camporegistro5">
+                    </label>
+                    <label>
+                        <span class="subLabel">Apellido</span>
+                        <input type="text" id="camporegistro6" name="camporegistro6">
+                    </label>
+                    <label>
+                        <span class="subLabel">DNI</span>
+                        <input type="text" id="camporegistro7" name="camporegistro7">
+                    </label>
+                    <label>
+                        <span class="subLabel">Fecha nacimiento</span>
+                        <input type="date" id="camporegistro8" name="camporegistro8">
+                    </label>
+                    <label>
+                        <span class="subLabel">Telefono</span>
+                        <input type="tel" id="camporegistro9" name="camporegistro9">
+                    </label>
+                    <label>
+                        <span class="subLabel">Direccion</span>
+                        <input type="text" id="camporegistro10" name="camporegistro10">
+                    </label>
+                </article>
+                <article id="inf3" class="info">
+                    <label>
+                        <span class="subLabel">Denominacion</span>
+                        <input type="text" id="camporegistro14" name="camporegistro14">
+                    </label>
+                    <label>
+                        <span class="subLabel">CIF</span>
+                        <input type="text" id="camporegistro11" name="camporegistro11">
+                    </label>
+                    <label style="padding: 20px 0px 10px 0px;">
+                        <span class="subLabel">Tipo</span>
+                            <select id="camporegistro12" name="camporegistro12">
+                                <option value="">Seleccionar</option>
+                                <option value="1">Proveedor</option>
+                                <option value="2">Vendedor</option>
+                            </select>
+                    </label>
+                    <label>
+                        <span class="subLabel">Web</span>
+                        <input type="text" id="camporegistro13" name="camporegistro13">
+                    </label>
+                </article>
+                <div>
+                    <span><a id="prev" class="grayBtn atr">Atras</a></span>
+                    <span><a id="next" class="orangeBtn sig">Siguiente</a></span>
+                    <input id="sendRegister" style="display:none;" type="submit" class="blueBtn" value="Registrarse">
+                </div>
+            </form>
+        </div>
+    </div>
+</section>

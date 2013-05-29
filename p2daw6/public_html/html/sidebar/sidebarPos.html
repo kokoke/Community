@@ -1,0 +1,29 @@
+<form action="/p2daw6/cpanel/pos/addPedido" method="post" id="formCompra">
+    <section class="secWrapper">
+        <div class="secTop"></div>
+        <div class="tabContainerNav">
+            <fieldset class="contactMenu">
+                <div id="general" class="">
+                    <section id="showCart">
+                        <ul id="listProductCart">
+                        </ul>
+                        <fieldset>
+                            <label>
+                                <span class="titleCart">Total</span>
+                                <span class="price priceTotalCart">0&euro;</span>
+                            </label>
+                            <div id="selectTarget" style="margin-top: 20px;">
+                                {listTargetPay}
+                            </div>
+                        </fieldset>
+                        <div style="margin-top: 20px;text-align: right;">
+                            <a class="margin_confirmar eliminarCart" style="float: none;" href="/p2daw6/cpanel/pos/delCart"> Vaciar </a>
+                            <a class="continuar" style="float: none;">Detalles</a>
+                        </div>
+                        <input type="submit" value="Comprar" id="buyBtn">
+                    </section>
+                </div>
+            </fieldset>
+        </div>
+    </section>
+</form>

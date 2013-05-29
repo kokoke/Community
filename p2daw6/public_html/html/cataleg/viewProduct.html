@@ -1,0 +1,84 @@
+<a href="/p2daw6/cpanel/cataleg/products" class="buttonM GreenBtn positionGoBack">
+    <span class="goBack"></span>
+    <span>Volver</span>
+</a>
+
+<section id="viewDetalls">
+    <div class="widget">
+        <form id="formNewProduct" action="saveProduct" method="post" class="newProduct News">
+            <article id="infoNewProduct">
+                <label>
+                    <img src="{imgProduct}" class="imgGrande">
+                </label>
+                <label>
+                    <span class="textDetall">Nombre</span>
+                    <span> {nombreProduct} </span><br>
+                </label>
+                <label class="permitirCompra" >
+                    <input type="checkbox" disabled="disabled" {valorCompra} name="checkEnambleBuy">
+                    <span>Permitir la compra</span>
+                </label>
+            </article>
+            <article id="detail1" class="detail">
+                <header>
+                    <span class="circulo">+</span>
+                    <span class="tituloSection">Informacion</span>
+                </header>
+                <fieldset>
+                    <label>
+                        <span class="textDetall">Categoria</span>
+                        <span>{categoriaProducto}</span>
+                    </label>
+                    <label>
+                        <span class="textDetall">Precio</span>
+                        <span> {precioProducto} </span>
+                    </label>
+                    <label>
+                        <span class="textDetall">Referencia<span id="helpRef" class="help">?</span></span>
+                        <span> {REFProducto} </span>
+                    </label>
+                </fieldset>
+            </article>
+            <article id="detail2" class="detail">
+                <header>
+                    <span class="circulo">+</span>
+                    <span class="tituloSection">Abastecimiento</span>
+                </header>
+                <fieldset>
+                    <label>
+                        <span class="textDetall">Precio Coste</span>
+                        <span> {precioCosteProducto} </span>
+                    </label>
+                    <label>
+                        <span class="textDetall">Plazo Entrega<span id="helpEnt" class="help">?</span></span>
+                        <span> {entregaProducto} </span>
+                    </label>
+                </fieldset>
+            </article>
+            <article id="detail3" class="detail">
+                <header>
+                    <span class="circulo">+</span>
+                    <span class="tituloSection">Inventario</span>
+                </header>
+                <fieldset>
+                    <label>
+                        <span class="textDetall">Stock</span>
+                        <span>{stockProducto} </span>
+                    </label>
+                </fieldset>
+            </article>
+            <article id="detail5" class="detail">
+                <header>
+                    <span class="circulo">+</span>
+                    <span class="tituloSection">Contabilidad</span>
+                </header>
+                <fieldset>
+                    <label>
+                        <span class="textDetall">IVA</span>
+                        <span> {ivaProducto} </span>
+                    </label>
+                </fieldset>
+            </article>
+        </form>
+    </div>
+</section>

@@ -1,0 +1,26 @@
+<fieldset class="content">
+    <div class="contentTop">
+        <span class="pageTitleCpanel">
+            Mensajes
+        </span>
+    </div>
+    {breadLine}
+    <section class="contentPage">
+        <fieldset>
+            <div id="dialogo">
+                <input type="text" class="send" id="send_msj" name="send_msj" placeholder="Introducir mensaje...">
+                <div class="send_btn">
+                    <input type="submit" id="sendMessage" name="sendMessage" class="sendBtn" value="Enviar">
+                </div>
+                <div class="widget">
+                    <div class="whead">
+                        <h6>Mensaje: </h6>
+                    </div>
+                    <ul class="messages">
+                        {loadMessages}
+                    </ul>
+                </div>
+            </div>
+        </fieldset>
+    </section>
+</fieldset>

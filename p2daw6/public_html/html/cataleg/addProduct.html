@@ -1,0 +1,99 @@
+<a href="/p2daw6/cpanel/cataleg/products" class="buttonM GreenBtn positionGoBack">
+    <span class="goBack"></span>
+    <span>Volver</span>
+</a>
+<section id="addDetalls">
+    <div class="widget">
+        <form id="formNewProduct" action="saveProduct" method="POST" enctype="multipart/form-data" class="newProduct News" >
+            <article id="infoNewProduct">
+                <label>
+                    <div id="algo"></div>
+                    <img class="imgGrande viewImage">
+                    <span class="falseUploadFile">Seleccionar imagen</span>
+                    <input id="uploadImageProduct" name="imagenAddProduct" type="file" class="uploadedfile " data-preview="true">
+                </label>
+                <label>
+                    <span class="subLabel">Nombre</span>
+                    <input type="text" id="saveNameProduct" name="saveNameProduct"><br>
+                </label>
+                <label>
+                    <input id="saveProduct" type="submit" class="btnGuardar" value="Guardar">
+                </label>
+                <label class="permitirCompra" >
+                    <input type="checkbox" name="checkEnambleBuy">
+                    <span>Permitir la compra</span>
+                </label>
+            </article>
+            <article id="detail1" class="detail">
+                <header>
+                    <span class="circulo">+</span>
+                    <span class="tituloSection">Informacion</span>
+                </header>
+                <fieldset>
+                    <label>
+                        <span class="subLabel">Categoria</span>
+                        <select  id="listCategory" name="listCategory" data-placeholder="Categoria" class="chzn-select" style="width:350px;" tabindex="2">
+                              <option value=""></option>
+                              {listaProductsCategory}
+                        </select>
+                    </label>
+                    <label>
+                        <span class="subLabel">Precio</span>
+                        <input type="text" id="savePrecioProduct" name="savePrecioProduct" />
+                    </label>
+                    <label>
+                        <span class="subLabel">Referencia
+                            <span id="helpRef" class="help">?</span>
+                        </span>
+                        <input type="text" id="saveRefProduct" name="saveRefProduct">
+                    </label>
+                </fieldset>
+            </article>
+            <article id="detail2" class="detail">
+                <header>
+                    <span class="circulo">+</span>
+                    <span class="tituloSection">Abastecimiento</span>
+                </header>
+                <fieldset>
+                    <label>
+                        <span class="subLabel">Precio Coste</span>
+                        <input type="text" id="savePriceCostProduct" name="savePriceCostProduct">
+                    </label>
+                    <label>
+                        <span class="subLabel">Plazo Entrega
+                            <span id="helpEnt" class="help">?</span>
+                        </span>
+                        <input type="number" id="saveDeliveryProduct" name="saveDeliveryProduct">
+                    </label>
+                </fieldset>
+            </article>
+            <article id="detail3" class="detail">
+                <header>
+                    <span class="circulo">+</span>
+                    <span class="tituloSection">Inventario</span>
+                </header>
+                <fieldset>
+                    <label>
+                        <span class="subLabel">Stock</span>
+                        <input type="number" id="saveStockProduct" name="saveStockProduct">
+                    </label>
+                </fieldset>
+            </article>
+            <article id="detail5" class="detail">
+                <header>
+                    <span class="circulo">+</span>
+                    <span class="tituloSection">Contabilidad</span>
+                </header>
+                <fieldset>
+                    <label>
+                        <span class="subLabel">IVA</span>
+                        <select  id="listIVA" name="listIVA" data-placeholder="IVA" class="chzn-select" style="width:350px;" tabindex="2">
+                              <option value=""></option>
+                              {listIVA}
+                        </select>
+                    </label>
+                </fieldset>
+            </article>
+        </form>
+    </div>
+</section>

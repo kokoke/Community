@@ -1,0 +1,35 @@
+<table id="tablaDetallesCarrito">
+    <thead>
+        <tr>
+            <th>
+                <span>Empresa</span>
+            </th>
+            <th>
+                <span>Nombre</span>
+            </th>
+            <th>
+                <span>Referencia</span>
+            </th>
+            <th>
+                <span>Precio</span>
+            </th>
+            <th>
+                <span>Cantidad</span>
+            </th>
+            <th>
+                <span>Subtotal</span>
+            </th>
+        </tr>
+    </thead>
+    <tbody>
+        {listaDetallesProductosCarrito}
+        <tr>
+            <td id="targetNumber" colspan="2"></td>
+            <td></td>
+            <td></td>
+            <td id="total">Total:</td>
+            <td>{precioTotalCarrito}</td>
+        </tr>
+    </tbody>
+</table>
+<a href="{volverListaProductos}" class="volver">Volver</a>

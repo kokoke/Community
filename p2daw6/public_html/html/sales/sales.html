@@ -1,0 +1,37 @@
+<section id="secProductos">
+    <div class="widget">
+        <div class="whead">
+            <h6>Ventas</h6>
+        </div>
+        <fieldset id="contentTable">
+            <table id="tableProducts" cellpadding="0" cellspacing="0" border="0" class="dTable dataTable" >
+                <thead>
+                    <tr role="row">
+                        <th class="sorting_asc">
+                            Pedido
+                            <span class="sorting" style="display: block;"></span>
+                        </th>
+                        <th class="sorting_desc" >
+                            Cliente
+                        </th>
+                        <th class="sorting_desc" >
+                            Fecha
+                        </th>
+                        <th class="sorting_desc" >
+                            Forma de pago
+                        </th>
+                        <th class="sorting" >
+                            Total
+                        </th>
+                        <th class="sorting" >
+                            Accion
+                        </th>
+                    </tr>
+                </thead>
+                <tbody id="tableProducts" role="alert" aria-live="polite" aria-relevant="all">
+                    {listaDeProductos}
+                </tbody>
+            </table>
+        </fieldset>
+    </div>
+</section>

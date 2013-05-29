@@ -1,0 +1,31 @@
+<section id="adminLogin">
+    <div class="loginWrapper">
+        <div class="errorField" {display}>
+            <small>{errorUserValid}</small>
+        </div>
+        <header>
+            <h1>{Login}</h1>
+            <div class="formError" >
+                <div id="errorUser" class="errorField">{errorUserValid}<br></div>
+            </div>
+        </header>
+        <form action="" id="formLogin" method="post">
+            <input type="text" id="inLogin" name="email" placeholder="community@gmil.com" class="loginEmail">
+            <div class="formError">
+                <div id="errorEmail1" class="errorField">{fieldRequired}<br></div>
+            </div>
+            <div class="formError" >
+                <div id="errorEmail2" class="errorField">{emailError}<br></div>
+            </div>
+
+            <input type="password" id="inPass" name="password" placeholder="{Password}" class="loginPassword">
+            <span class="remember">
+                <a href="/p2daw6/admin/remember" class="aColorBlack">Has olvidado la contraseña?</a>
+            </span>
+            <div class="formError" >
+                <div id="errorPass" class="errorField">{fieldRequired}<br></div>
+            </div>
+            <input type="submit" name="submit" value="{Login}" class="blackBtn">
+        </form>
+    </div>
+</section>
