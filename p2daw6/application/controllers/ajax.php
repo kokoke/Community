@@ -274,7 +274,8 @@ class Controller_Ajax
     
     public function action_email()
     {
-	    $email 	 = 'smpracticas@hotmail.com';//$_POST["email"];
+    	$myemail = 'sgmm1989@gmail.com';
+	    $email 	 = $_POST["email"];
 	    $nombre  = $_POST["name"];
 	    $textMensaje = $_POST["msj"];
 	    
@@ -292,17 +293,24 @@ class Controller_Ajax
 				</body>
 			</html>
 		';
-		
 		// Para enviar un correo HTML mail, la cabecera Content-type debe fijarse
 		$cabeceras  = 'MIME-Version: 1.0' . "\r\n";
 		$cabeceras .= 'Content-type: text/html; charset=iso-8859-1' . "\r\n";
 		
 		// Cabeceras adicionales
-		$cabeceras .= 'To: $email' . "\r\n";
+		$cabeceras .= 'To:'. $email . '\r\n';
 		$cabeceras .= 'From: Community <community@gmail.com>' . "\r\n";
 		
 		// Mail it
 		mail($email, $titulo, $mensaje, $cabeceras);
+		
+		
+		//Mensaje que recibo
+		// Send
+		mail($myemail, 'contacto', $textMensaje.":".$email);
+			
+		
+		
 	    
     }
 }

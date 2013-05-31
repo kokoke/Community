@@ -412,6 +412,9 @@ function cargarNuevoMensaje(user, mensaje) {
 function enviarEmail() {
 	var url="/p2daw6/ajax/email";
   $.post(url,{name:$("#contactName").val(), email:$("#contactEmail").val(), msj:$("#contactMessage").val()},function (responseText){
+   		$("#contactName").val("");
+   		$("#contactEmail").val("");
+   		$("#contactMessage").val("");
    		alertify.success( "Mensaje enviado" );
   });
 }
@@ -1042,7 +1045,7 @@ $("#formEditProduct input").change(function(){
 /******************************
  * Campos Defecto Registo     *
  ******************************/
-
+ /*
  $("#camporegistro1").val("PioPio");
  $("#camporegistro2").val("asd@asd.asd");
  $("#camporegistro3").val("Sm12345678");
@@ -1055,7 +1058,7 @@ $("#formEditProduct input").change(function(){
  $("#camporegistro10").val("algun lugar de la mancha");
  $("#camporegistro11").val("A58818501");
  $("#camporegistro13").val("https://www.google.es");
-
+ */
 /*********************************
  * Campos Defecto Nuevo Producto *
  *********************************/
